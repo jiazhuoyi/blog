@@ -1,3 +1,7 @@
+title: vue生产环境url404问题
+date: 2019-02-18 18:30:00
+tags: Vue, JavaScript, Nginx
+
 # vue生产环境url404问题
 
 ##### 1.嵌套路由刷新404问题
