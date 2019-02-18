@@ -1,8 +1,8 @@
-title: vue生产环境url404问题
-date: 2019-02-18 18:30:00
-tags: Vue, JavaScript, Nginx
-
-# vue生产环境url404问题
+---
+title: vue生产环境url的404问题
+date: 2019-02-18 18:39:21
+tags: Vue，Nginx，Webpack
+---
 
 ##### 1.嵌套路由刷新404问题
 
@@ -12,7 +12,7 @@ vue-router默认是mode为hash，这个时候url会带上#号，当你使用hist
 
 方法有几种，我采用的是在nginx中修改配置
 
-![](.\nginx.png)
+![](E:/blog/source/_posts/nginx.png)
 
 根据vue-router官方的建议（[HTML5 History 模式](https://router.vuejs.org/zh/guide/essentials/history-mode.html)），使用nginx的try_files指令，将uri重定向到index.html
 
@@ -26,13 +26,13 @@ vue-router默认是mode为hash，这个时候url会带上#号，当你使用hist
 
 修改build目录下的utils.js文件
 
-![](./config1.png)
+![](E:/blog/source/_posts/config1.png)
 
 
 
 然后会出现这个问题（因为嵌套路由导致静态资源的路径加上了嵌套的前缀）：
 
-![](./错误.png)
+![](E:/blog/source/_posts/%E9%94%99%E8%AF%AF.png)
 
 是因为webpack配置中是./相对路径，所以会带上url前缀。
 
@@ -40,4 +40,4 @@ vue-router默认是mode为hash，这个时候url会带上#号，当你使用hist
 
 修改config目录下的index.js
 
-![](./config2.png)
+![](E:/blog/source/_posts/config2.png)
