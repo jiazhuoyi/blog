@@ -5,9 +5,7 @@ tags: linux，centos，nginx， firewall
 
 ---
 
-## linux的常用操作(centos7, 仅用于自查)
-
-### 1.nginx
+#### 1.nginx
 
 重启nginx：**nginx -s reload**
 
@@ -17,7 +15,7 @@ tags: linux，centos，nginx， firewall
 
 查询nginx进程：**ps  -ef | grep nginx**
 
-### 2.firewall
+2.firewall
 
 查看版本：fire-wall-cmd --version
 
@@ -29,14 +27,14 @@ tags: linux，centos，nginx， firewall
 
 删除端口:  firewall-cmd --zone=public --remove-port=4000/tcp --permanent
 
-### 3.shell
+#### 3.shell
 
 // TODO
 
-### 4.mongodb
+#### 4.mongodb
 
 // TODO
 
-### 5.redis
+#### 5.redis
 
 // TODO
