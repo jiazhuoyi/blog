@@ -12,6 +12,15 @@ if page.keywords
 else
     meta(name="keywords" content= theme.keywords)
 
+script.
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a55b833876001ba4b81c34ab3a932a1f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
 meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",name="viewport")
 meta(content="yes",name="apple-mobile-web-app-capable")
 meta(content="black",name="apple-mobile-web-app-status-bar-style")
@@ -23,3 +32,4 @@ link(rel="stylesheet", href= url_for('css/style.css'))
 link(rel="stylesheet", href= url_for('css/blog_basic.css'))
 link(rel="stylesheet", href= url_for('css/font-awesome.min.css'))
 link(rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml")
+
