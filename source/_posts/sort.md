@@ -2,6 +2,8 @@
 title: 排序算法
 date: 2017-11-15 12:06:30
 tags: JavaScript
+index_img: /img/js.jpg
+categories: [javascript]
 ---
 
 

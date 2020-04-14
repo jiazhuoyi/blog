@@ -1,8 +1,10 @@
 ---
 title: linux上的常用操作(便于自查)
 date: 2019-06-18 14:14:13
-tags: linux，centos，nginx， firewall
-
+tags: [linux，centos，nginx，firewall]
+index_img: /img/linux.jpg
+banner_img: /img/linux.jpg
+categories: [计算机知识]
 ---
 
 #### 1.nginx

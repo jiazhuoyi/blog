@@ -2,6 +2,8 @@
 title: js拷贝
 date: 2018-01-05 16:17:07
 tags:  JavaScript
+index_img: /img/js.jpg
+categories: [javascript]
 ---
 
 ## 深拷贝和浅拷贝
